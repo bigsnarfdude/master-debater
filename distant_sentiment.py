@@ -65,7 +65,7 @@ def get_top(redis_db,n):
 
 if __name__ == "__main__":
 
-	with tweetstream.SampleStream('dgleebits','vancouver2010!') as stream:
+with tweetstream.SampleStream('USERNAME','PASSWORD'):
 		for tweet in stream:
 			if 'text' in tweet.keys() and len(tweet['text'])>0:
 				try:
